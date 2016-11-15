@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   def index
     @movies = Movie.all
+    @director = Director.all
 
     render("movies/index.html.erb")
   end
